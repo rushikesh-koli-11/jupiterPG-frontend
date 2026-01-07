@@ -1,0 +1,200 @@
+.lux-apartments {
+  background: #020617;
+  padding: 80px 0;
+  color: #e5e7eb;
+}
+
+.lux-header {
+  margin-bottom: 40px;
+}
+
+.lux-title {
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.lux-subtitle {
+  opacity: 0.7;
+}
+
+.lux-apartment-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.lux-apartment-card {
+  background: #020617;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 70px rgba(0,0,0,0.7);
+}
+
+.lux-apartment-image {
+  position: relative;
+  height: 220px;
+}
+
+.lux-apartment-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider .slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slide-btn.left { left: 10px; }
+.slide-btn.right { right: 10px; }
+
+.lux-apartment-content {
+  padding: 16px;
+}
+
+.lux-apartment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lux-location {
+  opacity: 0.7;
+  font-size: 0.85rem;
+}
+
+.lux-price-badge {
+  background: linear-gradient(180deg,#facc15,#eab308);
+  color: #1e293b;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.lux-sharing {
+  display: flex;
+  gap: 10px;
+  margin: 14px 0;
+}
+
+.lux-sharing-card {
+  background: rgba(255,255,255,0.06);
+  padding: 8px 12px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.lux-sharing-card strong {
+  color: #facc15;
+  display: block;
+}
+
+.lux-amenities {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.lux-amenity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.lux-amenity small {
+  font-size: 0.6rem;
+  opacity: 0.7;
+}
+
+.lux-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.lux-btn-primary {
+  flex: 1;
+  background: linear-gradient(180deg,#facc15,#eab308);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lux-btn-outline {
+  flex: 1;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 10px;
+  border-radius: 10px;
+  color: #e5e7eb;
+  cursor: pointer;
+}
+
+/* ===== MODAL ===== */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(2,6,23,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-card {
+  width: 420px;
+  background: #020617;
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.modal-form {
+  display: grid;
+  gap: 12px;
+}
+
+.modal-form input,
+.modal-form textarea {
+  background: #020617;
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 10px;
+  border-radius: 10px;
+  color: #e5e7eb;
+}
+
+.modal-form textarea {
+  resize: none;
+  min-height: 80px;
+}
+
+.modal-footer {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 10px;
+  border-radius: 10px;
+  color: #e5e7eb;
+}
+.lux-apartment-image img {
+  transition: opacity 0.6s ease-in-out;
+}

@@ -1,0 +1,49 @@
+.lux-about {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #0b0f1a, #0e1322);
+  color: #e5e7eb;
+}
+
+.lux-about-header {
+  margin-bottom: 50px;
+}
+
+.lux-about-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.lux-about-title i {
+  color: #d4af37;
+  margin-right: 8px;
+}
+
+.lux-about-subtitle {
+  color: #9ca3af;
+  margin-top: 10px;
+}
+
+.lux-about-card {
+  background: #111827;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.lux-about-card p {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #d1d5db;
+  line-height: 1.9;
+  font-size: 1rem;
+  margin-bottom: 18px;
+}
+
+.lux-about-card i {
+  color: #d4af37;
+  font-size: 1.2rem;
+  margin-top: 4px;
+}

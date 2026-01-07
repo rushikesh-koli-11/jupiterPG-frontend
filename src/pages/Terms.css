@@ -1,0 +1,56 @@
+.lux-terms {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #0b0f1a, #0e1322);
+  color: #e5e7eb;
+}
+
+.lux-terms-header {
+  margin-bottom: 50px;
+}
+
+.lux-terms-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.lux-terms-title i {
+  color: #d4af37;
+  margin-right: 8px;
+}
+
+.lux-terms-subtitle {
+  color: #9ca3af;
+  margin-top: 10px;
+}
+
+.lux-terms-card {
+  background: #111827;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.lux-terms-item {
+  display: flex;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.lux-terms-item:last-child {
+  border-bottom: none;
+}
+
+.lux-terms-item i {
+  color: #d4af37;
+  font-size: 1.4rem;
+  margin-top: 4px;
+}
+
+.lux-terms-item p {
+  margin: 0;
+  color: #d1d5db;
+  line-height: 1.9;
+}

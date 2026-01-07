@@ -1,0 +1,157 @@
+.beds {
+  color: #e5e7eb;
+}
+
+/* HEADER */
+.beds-top {
+  margin-bottom: 18px;
+}
+
+.subtitle {
+  color: #9ca3af;
+}
+
+/* FILTER BAR */
+.beds-filter {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 2fr 1fr 1.2fr;
+  gap: 12px;
+
+  background: #020617;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 22px;
+}
+
+.beds-filter select,
+.beds-filter input {
+  height: 42px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #e5e7eb;
+  padding: 0 12px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.beds-filter input::placeholder {
+  color: #9ca3af;
+}
+
+.beds-filter select:focus,
+.beds-filter input:focus {
+  border-color: #facc15;
+  background: rgba(250,204,21,0.04);
+}
+
+.beds-filter select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* TABLE */
+.beds-table-card {
+  background: #020617;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.beds-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.beds-table th,
+.beds-table td {
+  padding: 14px 18px;
+}
+
+.beds-table tbody tr {
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.beds-table tbody tr:hover {
+  background: rgba(250,204,21,0.04);
+}
+
+/* ACTIONS */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: linear-gradient(180deg, #facc15, #eab308);
+  color: #1e293b;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+}
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(2,6,23,0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-card {
+  background: #020617;
+  width: 480px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.modal-body {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+}
+
+.location-box {
+  background: rgba(255,255,255,0.04);
+  padding: 12px;
+  margin: 12px;
+  border-radius: 12px;
+}
+
+.modal-footer {
+  display: flex;
+  gap: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .beds-filter {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .beds-filter {
+    grid-template-columns: 1fr;
+  }
+}

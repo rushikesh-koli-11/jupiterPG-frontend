@@ -1,0 +1,93 @@
+/* =========================================================
+   LUXURY STATS – TIGHT, CLEAN, NO OVERFLOW
+   ========================================================= */
+
+.lux-stats {
+  padding: 60px 0 40px; /* reduced bottom gap */
+  background: transparent;
+}
+
+/* column control */
+.lux-stat-col {
+  padding: 0;
+}
+
+/* stat block */
+.lux-stat-card {
+  padding: 20px 0;
+}
+
+/* fixed height prevents jump */
+.lux-stat-value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fde68a;
+  margin: 0;
+  line-height: 1;
+  min-height: 3.2rem; /* IMPORTANT: prevents layout shift */
+}
+
+/* label */
+.lux-stat-label {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+/* vertical dividers (desktop only) */
+@media (min-width: 768px) {
+  .lux-stat-card {
+    position: relative;
+  }
+
+  .lux-stat-card::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-50%);
+  }
+
+  .lux-stat-col:last-child .lux-stat-card::after {
+    display: none;
+  }
+}
+
+/* mobile spacing */
+@media (max-width: 768px) {
+  .lux-stat-value {
+    font-size: 2.4rem;
+  }
+
+  .lux-stat-card {
+    margin-bottom: 24px;
+  }
+}
+/* ===== STATS HEADER (MATCHES AMENITIES) ===== */
+.lux-stats-header {
+  margin-bottom: 60px;
+}
+
+.lux-stats-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+}
+
+.lux-stats-subtitle {
+  margin-top: 10px;
+  font-size: 1.05rem;
+  color: #cbd5f5;
+}
+
+@media (max-width: 768px) {
+  .lux-stats-title {
+    font-size: 2rem;
+  }
+}

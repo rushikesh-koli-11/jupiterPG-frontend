@@ -1,0 +1,152 @@
+/* =========================================================
+   LUXURY AMENITIES SECTION – COLORFUL PREMIUM CARDS
+   ========================================================= */
+
+/* ===== SECTION ===== */
+.lux-section {
+  padding: 110px 0;
+  background: linear-gradient(
+    180deg,
+    #020617 0%,
+    #03091a 50%,
+    #020617 100%
+  );
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===== HEADER ===== */
+.lux-header {
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.lux-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.lux-subtitle {
+  margin-top: 10px;
+  font-size: 1.05rem;
+  color: #cbd5f5;
+}
+
+/* ===== CARD ===== */
+.lux-card {
+  height: 100%;
+  padding: 30px 28px;
+  border-radius: 22px;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  transition: all 0.5s ease;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 30px 60px rgba(0, 0, 0, 0.55);
+}
+
+/* soft luxury shine */
+.lux-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top left,
+    rgba(255, 255, 255, 0.18),
+    transparent 55%
+  );
+  opacity: 0;
+  transition: opacity 0.45s ease;
+}
+
+.lux-card:hover::after {
+  opacity: 1;
+}
+
+.lux-card:hover {
+  transform: translateY(-12px) scale(1.02);
+}
+
+/* ===== ICON ===== */
+.lux-icon {
+  font-size: 42px;
+  margin-bottom: 18px;
+  color: #ffffff;
+  animation: slowFloat 6s ease-in-out infinite;
+}
+
+@keyframes slowFloat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+/* ===== TEXT ===== */
+.lux-card-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.lux-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lux-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #f8fafc;
+}
+
+.lux-list i {
+  color: #fde68a;
+}
+
+/* ===== PREMIUM COLORFUL GRADIENT THEMES ===== */
+.lux-gold {
+  background: linear-gradient(145deg, #7c2d12, #451a03);
+}
+
+.lux-emerald {
+  background: linear-gradient(145deg, #064e3b, #022c22);
+}
+
+.lux-sapphire {
+  background: linear-gradient(145deg, #1e3a8a, #020617);
+}
+
+.lux-amethyst {
+  background: linear-gradient(145deg, #5b21b6, #2e1065);
+}
+
+.lux-sunset {
+  background: linear-gradient(145deg, #7c2d12, #3f1d0b);
+}
+
+.lux-rose {
+  background: linear-gradient(145deg, #881337, #4c0519);
+}
+
+/* ===== MOBILE OPTIMIZATION ===== */
+@media (max-width: 768px) {
+  .lux-title {
+    font-size: 2rem;
+  }
+
+  .lux-card {
+    padding: 24px;
+  }
+
+  .lux-icon {
+    font-size: 36px;
+  }
+}

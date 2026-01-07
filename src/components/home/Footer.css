@@ -1,0 +1,89 @@
+.lux-footer {
+  background: linear-gradient(
+    180deg,
+    #facc15 0%,
+    #eab308 45%,
+    #ca8a04 100%
+  );
+  padding: 70px 0 30px;
+  color: #1e293b; /* dark slate for readability */
+}
+
+/* Brand */
+.lux-footer-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #1e293b;
+}
+
+.lux-footer-brand i {
+  color: #1e293b;
+  margin-right: 6px;
+}
+
+/* Text */
+.lux-footer-text {
+  color: #334155;
+  line-height: 1.7;
+  margin-top: 12px;
+  font-size: 0.95rem;
+}
+
+/* Section titles */
+.lux-footer-title {
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #1e293b;
+}
+
+/* Links */
+.lux-footer-links li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+.lux-footer-links a {
+  color: #334155;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.lux-footer-links a:hover {
+  color: #0f172a;
+  text-decoration: underline;
+}
+
+/* Contact */
+.lux-footer-contact li {
+  list-style: none;
+  margin-bottom: 10px;
+  color: #334155;
+}
+
+.lux-footer-contact i {
+  margin-right: 6px;
+  color: #1e293b;
+}
+
+/* Social icons */
+.lux-footer-socials a {
+  color: #1e293b;
+  font-size: 1.3rem;
+  margin-right: 12px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.lux-footer-socials a:hover {
+  color: #0f172a;
+  transform: translateY(-2px);
+}
+
+/* Bottom */
+.lux-footer-bottom {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #334155;
+  border-top: 1px solid rgba(30, 41, 59, 0.25);
+  padding-top: 20px;
+}

@@ -1,0 +1,199 @@
+.residents-page {
+  color: #e5e7eb;
+}
+
+.residents-title {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+/* FILTER BAR */
+.filter-card {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  background: #020617;
+  padding: 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 16px;
+}
+
+.filter-card select,
+.filter-card input {
+  background: #020617;
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 10px;
+  border-radius: 10px;
+  color: #e5e7eb;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: linear-gradient(180deg, #facc15, #eab308);
+  color: #1e293b;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.danger {
+  color: #ef4444;
+}
+
+/* TABLE */
+.residents-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #020617;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.residents-table th,
+.residents-table td {
+  padding: 12px;
+}
+
+.residents-table thead {
+  background: rgba(255,255,255,0.05);
+}
+
+.residents-table tbody tr {
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.residents-table tbody tr:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+.table-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.table-actions button {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #e5e7eb;
+}
+
+.table-actions button:hover {
+  background: rgba(255,255,255,0.12);
+}
+/* ================= MODAL FIX ================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(2,6,23,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.modal-card {
+  width: 460px;
+  background: #020617;
+  border-radius: 20px;
+  padding: 18px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 30px 90px rgba(0,0,0,0.8);
+}
+
+/* ✅ KEY FIX */
+.modal-scroll {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* FORM */
+.modal-form {
+  display: grid;
+  gap: 12px;
+}
+
+.modal-form input,
+.modal-form select {
+  background: #020617;
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 10px;
+  border-radius: 10px;
+  color: #e5e7eb;
+}
+
+/* LABELS */
+.form-label {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  margin-top: 4px;
+}
+
+/* FOOTER */
+.modal-footer {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+/* ================= DISABLED BUTTON VISIBILITY ================= */
+
+.table-actions button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  background: rgba(255,255,255,0.03);
+  border-color: rgba(255,255,255,0.08);
+}
+
+/* Prevent hover effect on disabled */
+.table-actions button:disabled:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+/* Optional: subtle strike-through feel */
+.table-actions button:disabled {
+  filter: grayscale(100%);
+}
+
+.idproof-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ================= ID PROOF PREVIEW ================= */
+
+.id-proof-preview {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.15);
+
+  background: #020617;
+  padding: 4px;
+
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.05),
+    0 10px 30px rgba(0,0,0,0.6);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover polish */
+.id-proof-preview:hover {
+  transform: scale(1.015);
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.08),
+    0 18px 45px rgba(0,0,0,0.8);
+}
+
+/* Container spacing */
+.id-proof-wrapper {
+  margin-top: 6px;
+}

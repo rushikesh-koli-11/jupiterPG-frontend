@@ -1,0 +1,104 @@
+/* =========================================================
+   PREMIUM LUXURY FAQ – DARK GLASS STYLE
+   ========================================================= */
+
+.lux-faq {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+/* ===== ITEM ===== */
+.lux-faq .accordion-item {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.55);
+  transition: border-color 0.35s ease;
+}
+
+/* active item highlight */
+.lux-faq .accordion-item:has(.accordion-button:not(.collapsed)) {
+  border-color: rgba(253, 230, 138, 0.35);
+}
+
+/* ===== HEADER BUTTON ===== */
+.lux-faq .accordion-button {
+  background: transparent;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 20px 26px;
+  box-shadow: none;
+  letter-spacing: 0.2px;
+  transition: color 0.3s ease;
+}
+
+/* remove bootstrap bg */
+.lux-faq .accordion-button:not(.collapsed) {
+  background: rgba(255, 255, 255, 0.02);
+  color: #fde68a;
+}
+
+/* hover feel */
+.lux-faq .accordion-button:hover {
+  color: #fde68a;
+}
+
+/* remove focus ring */
+.lux-faq .accordion-button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* arrow icon */
+.lux-faq .accordion-button::after {
+  filter: invert(1);
+  opacity: 0.6;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.lux-faq .accordion-button:not(.collapsed)::after {
+  opacity: 1;
+  transform: rotate(180deg);
+}
+
+/* ===== BODY ===== */
+.lux-faq .accordion-collapse {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.lux-faq .accordion-body {
+  color: #cbd5f5;
+  padding: 20px 26px 26px;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* ===== SUBTLE INNER DIVIDER ===== */
+.lux-faq .accordion-body::before {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-bottom: 16px;
+  background: linear-gradient(
+    to right,
+    rgba(253, 230, 138, 0.35),
+    transparent
+  );
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .lux-faq .accordion-button {
+    font-size: 0.95rem;
+    padding: 16px 20px;
+  }
+
+  .lux-faq .accordion-body {
+    font-size: 0.9rem;
+    padding: 16px 20px 22px;
+  }
+}

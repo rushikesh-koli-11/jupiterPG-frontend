@@ -1,0 +1,94 @@
+/* ===== HERO SECTION ===== */
+.lux-hero {
+  padding: 120px 0 80px;
+  background: #020617;
+  color: #fff;
+}
+
+/* ===== CONTENT ===== */
+.lux-hero-content {
+  padding-right: 20px;
+}
+
+.lux-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fde68a;
+  border: 1px solid rgba(253, 230, 138, 0.4);
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.lux-hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.lux-hero-title span {
+  color: #fde68a;
+}
+
+.lux-hero-subtitle {
+  margin-top: 16px;
+  font-size: 1.05rem;
+  color: #cbd5f5;
+  max-width: 480px;
+}
+
+/* ===== BUTTON ===== */
+.lux-btn {
+  margin-top: 28px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  color: #1e293b;
+  background: linear-gradient(135deg, #fde68a, #facc15);
+  transition: all 0.35s ease;
+}
+
+.lux-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(250, 204, 21, 0.35);
+}
+
+/* ===== CAROUSEL ===== */
+.lux-carousel {
+  overflow: hidden;
+}
+
+.lux-hero-img {
+  height: 420px;
+  object-fit: cover;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 992px) {
+  .lux-hero {
+    padding-top: 100px;
+  }
+
+  .lux-hero-title {
+    font-size: 2.2rem;
+  }
+
+  .lux-hero-img {
+    height: 300px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .lux-hero-title {
+    font-size: 1.9rem;
+  }
+
+  .lux-hero-subtitle {
+    font-size: 0.95rem;
+  }
+}

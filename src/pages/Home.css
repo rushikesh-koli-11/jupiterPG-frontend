@@ -1,0 +1,35 @@
+/* ===== LUXURY HERO → AMENITIES DIVIDER ===== */
+.lux-section-divider {
+  height: 120px;
+  margin-top: -60px;
+  background: linear-gradient(
+    to bottom,
+    rgba(2, 6, 23, 0),
+    rgba(2, 6, 23, 0.65),
+    rgba(2, 6, 23, 1)
+  );
+  pointer-events: none;
+}
+
+/* Optional premium glow */
+.lux-section-divider::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 1px;
+  margin: 0 auto;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(253, 230, 138, 0.5),
+    transparent
+  );
+}
+
+/* ===== MOBILE OPTIMIZATION ===== */
+@media (max-width: 768px) {
+  .lux-section-divider {
+    height: 80px;
+    margin-top: -40px;
+  }
+}

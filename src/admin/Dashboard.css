@@ -1,0 +1,104 @@
+/* =========================
+   DASHBOARD BASE
+========================= */
+.dashboard {
+  color: #e5e7eb;
+}
+
+/* =========================
+   HEADER
+========================= */
+.dashboard-header {
+  margin-bottom: 28px;
+}
+
+.dashboard-header h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.dashboard-header p {
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+/* =========================
+   GRID
+========================= */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+  margin-bottom: 32px;
+}
+
+/* =========================
+   CARD
+========================= */
+.dashboard-card {
+  background: #020617;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+/* Icon */
+.dashboard-card-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: linear-gradient(
+    180deg,
+    rgba(250,204,21,0.25),
+    rgba(234,179,8,0.18)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #facc15;
+  font-size: 1.4rem;
+}
+
+/* Info */
+.dashboard-card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-card-info .title {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.dashboard-card-info .value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #e5e7eb;
+}
+
+/* =========================
+   SECTION
+========================= */
+.dashboard-section h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* =========================
+   LOADING
+========================= */
+.dashboard-loading {
+  color: #9ca3af;
+  font-size: 1rem;
+}

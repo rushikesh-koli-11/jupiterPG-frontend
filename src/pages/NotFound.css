@@ -1,0 +1,53 @@
+/* ================= 404 PAGE ================= */
+
+.notfound-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  color: #ffffff;
+}
+
+.notfound-code {
+  font-size: 7rem;
+  font-weight: 800;
+  color: #fde68a;
+  margin-bottom: 10px;
+}
+
+.notfound-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.notfound-text {
+  color: #cbd5f5;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+.notfound-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #fde68a, #facc15);
+  color: #1e293b;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.notfound-btn:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .notfound-code {
+    font-size: 5rem;
+  }
+
+  .notfound-title {
+    font-size: 1.8rem;
+  }
+}

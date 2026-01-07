@@ -1,0 +1,58 @@
+.lux-privacy {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #0b0f1a, #0e1322);
+  color: #e5e7eb;
+}
+
+.lux-privacy-header {
+  margin-bottom: 50px;
+}
+
+.lux-privacy-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.lux-privacy-title i {
+  color: #d4af37;
+  margin-right: 8px;
+}
+
+.lux-privacy-subtitle {
+  color: #9ca3af;
+  margin-top: 10px;
+}
+
+.lux-privacy-card {
+  background: #111827;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.lux-privacy-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.lux-privacy-item:last-child {
+  border-bottom: none;
+}
+
+.lux-privacy-item i {
+  font-size: 1.4rem;
+  color: #d4af37;
+  margin-top: 4px;
+}
+
+.lux-privacy-item p {
+  margin: 0;
+  color: #d1d5db;
+  line-height: 1.9;
+  font-size: 0.98rem;
+}
