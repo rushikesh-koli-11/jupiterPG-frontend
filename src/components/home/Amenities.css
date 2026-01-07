@@ -1,8 +1,4 @@
-/* =========================================================
-   LUXURY AMENITIES SECTION – COLORFUL PREMIUM CARDS
-   ========================================================= */
 
-/* ===== SECTION ===== */
 .lux-section {
   padding: 110px 0;
   background: linear-gradient(
@@ -16,7 +12,6 @@
   overflow: hidden;
 }
 
-/* ===== HEADER ===== */
 .lux-header {
   margin-bottom: 60px;
   position: relative;
@@ -35,7 +30,6 @@
   color: #cbd5f5;
 }
 
-/* ===== CARD ===== */
 .lux-card {
   height: 100%;
   padding: 30px 28px;
@@ -49,7 +43,6 @@
     0 30px 60px rgba(0, 0, 0, 0.55);
 }
 
-/* soft luxury shine */
 .lux-card::after {
   content: "";
   position: absolute;
@@ -71,7 +64,6 @@
   transform: translateY(-12px) scale(1.02);
 }
 
-/* ===== ICON ===== */
 .lux-icon {
   font-size: 42px;
   margin-bottom: 18px;
@@ -85,7 +77,6 @@
   100% { transform: translateY(0); }
 }
 
-/* ===== TEXT ===== */
 .lux-card-title {
   font-size: 1.15rem;
   font-weight: 600;
@@ -111,7 +102,6 @@
   color: #fde68a;
 }
 
-/* ===== PREMIUM COLORFUL GRADIENT THEMES ===== */
 .lux-gold {
   background: linear-gradient(145deg, #7c2d12, #451a03);
 }
@@ -136,7 +126,6 @@
   background: linear-gradient(145deg, #881337, #4c0519);
 }
 
-/* ===== MOBILE OPTIMIZATION ===== */
 @media (max-width: 768px) {
   .lux-title {
     font-size: 2rem;

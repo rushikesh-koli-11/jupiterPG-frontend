@@ -2,7 +2,6 @@
   color: #e5e7eb;
 }
 
-/* HEADER */
 .enquiries-top {
   display: flex;
   justify-content: space-between;
@@ -15,7 +14,6 @@
   font-size: 0.95rem;
 }
 
-/* FILTER BAR */
 .enquiries-filter {
   display: flex;
   gap: 14px;
@@ -34,7 +32,6 @@
   color: #e5e7eb;
 }
 
-/* TABLE CARD */
 .enquiries-table-card {
   background: #020617;
   border: 1px solid rgba(255,255,255,0.08);
@@ -42,7 +39,6 @@
   overflow: hidden;
 }
 
-/* TABLE */
 .enquiries-table {
   width: 100%;
   border-collapse: collapse;
@@ -67,14 +63,12 @@
   background: rgba(250,204,21,0.04);
 }
 
-/* MESSAGE */
 .message {
   max-width: 320px;
   white-space: normal;
   line-height: 1.4;
 }
 
-/* STATUS */
 .status-select {
   background: #020617;
   border: 1px solid rgba(255,255,255,0.15);
@@ -83,7 +77,6 @@
   color: #e5e7eb;
 }
 
-/* ACTIONS */
 .actions {
   display: flex;
   justify-content: flex-end;
@@ -100,7 +93,6 @@
   color: #ef4444;
 }
 
-/* BUTTONS */
 .btn-primary {
   background: linear-gradient(180deg, #facc15, #eab308);
   color: #1e293b;
@@ -111,7 +103,6 @@
   cursor: pointer;
 }
 
-/* LINKS */
 .phone-link {
   color: #facc15;
   text-decoration: none;

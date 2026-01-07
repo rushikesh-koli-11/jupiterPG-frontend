@@ -4,7 +4,6 @@ export default function FAQ() {
     <section id="faq" className="lux-section">
       <div className="container">
 
-        {/* HEADER */}
         <div className="lux-header text-center">
           <h2 className="lux-title">Got questions? We’ve got answers.</h2>
           <p className="lux-subtitle">
@@ -12,10 +11,8 @@ export default function FAQ() {
           </p>
         </div>
 
-        {/* FAQ ACCORDION */}
         <div className="accordion lux-faq" id="faqAcc">
 
-          {/* Q1 */}
           <div className="accordion-item">
             <h2 className="accordion-header">
               <button
@@ -33,7 +30,6 @@ export default function FAQ() {
             </div>
           </div>
 
-          {/* Q2 */}
           <div className="accordion-item">
             <h2 className="accordion-header">
               <button
@@ -52,7 +48,6 @@ export default function FAQ() {
             </div>
           </div>
 
-          {/* Q3 */}
           <div className="accordion-item">
             <h2 className="accordion-header">
               <button
@@ -71,7 +66,6 @@ export default function FAQ() {
             </div>
           </div>
 
-          {/* Q4 */}
           <div className="accordion-item">
             <h2 className="accordion-header">
               <button
@@ -90,7 +84,6 @@ export default function FAQ() {
             </div>
           </div>
 
-          {/* Q5 */}
           <div className="accordion-item">
             <h2 className="accordion-header">
               <button

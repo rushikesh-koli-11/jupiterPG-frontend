@@ -1,13 +1,9 @@
-/* =========================================================
-   PREMIUM LUXURY FAQ – DARK GLASS STYLE
-   ========================================================= */
 
 .lux-faq {
   max-width: 920px;
   margin: 0 auto;
 }
 
-/* ===== ITEM ===== */
 .lux-faq .accordion-item {
   background: rgba(255, 255, 255, 0.035);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -19,12 +15,10 @@
   transition: border-color 0.35s ease;
 }
 
-/* active item highlight */
 .lux-faq .accordion-item:has(.accordion-button:not(.collapsed)) {
   border-color: rgba(253, 230, 138, 0.35);
 }
 
-/* ===== HEADER BUTTON ===== */
 .lux-faq .accordion-button {
   background: transparent;
   color: #ffffff;
@@ -36,24 +30,20 @@
   transition: color 0.3s ease;
 }
 
-/* remove bootstrap bg */
 .lux-faq .accordion-button:not(.collapsed) {
   background: rgba(255, 255, 255, 0.02);
   color: #fde68a;
 }
 
-/* hover feel */
 .lux-faq .accordion-button:hover {
   color: #fde68a;
 }
 
-/* remove focus ring */
 .lux-faq .accordion-button:focus {
   box-shadow: none;
   outline: none;
 }
 
-/* arrow icon */
 .lux-faq .accordion-button::after {
   filter: invert(1);
   opacity: 0.6;
@@ -65,7 +55,6 @@
   transform: rotate(180deg);
 }
 
-/* ===== BODY ===== */
 .lux-faq .accordion-collapse {
   background: rgba(255, 255, 255, 0.015);
 }
@@ -77,7 +66,6 @@
   line-height: 1.65;
 }
 
-/* ===== SUBTLE INNER DIVIDER ===== */
 .lux-faq .accordion-body::before {
   content: "";
   display: block;
@@ -90,7 +78,6 @@
   );
 }
 
-/* ===== MOBILE ===== */
 @media (max-width: 768px) {
   .lux-faq .accordion-button {
     font-size: 0.95rem;

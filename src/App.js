@@ -31,7 +31,7 @@ export default function App() {
       <ScrollToTop />
 
       <Routes>
-        {/* 🌐 PUBLIC PAGES */}
+        
         <Route element={<PublicLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
@@ -50,7 +50,7 @@ export default function App() {
            <Route path="/pg/:id" element={<PgDetails />} />
         </Route>
 
-        {/* 🔐 ADMIN PAGES */}
+       
         <Route
           path="/admin"
           element={
@@ -67,7 +67,7 @@ export default function App() {
           <Route path="available-beds" element={<AvailableBeds />} />
         </Route>
 
-        {/* ❌ 404 FALLBACK */}
+      
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

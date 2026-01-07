@@ -10,7 +10,7 @@ export default function ManageEnquiries() {
   const [pgMap, setPgMap] = useState({});
   const [loading, setLoading] = useState(true);
 
-  /* FILTER */
+ 
   const [filterPg, setFilterPg] = useState("");
   const [filterStatus, setFilterStatus] = useState("");
 
@@ -36,20 +36,19 @@ export default function ManageEnquiries() {
     }
   };
 
-  /* STATUS UPDATE */
   const updateStatus = async (id, status) => {
     await api.put(`/enquiries/${id}/status?status=${status}`);
     init();
   };
 
-  /* DELETE */
+  
   const deleteEnquiry = async (id) => {
     if (!window.confirm("Delete this enquiry permanently?")) return;
     await api.delete(`/enquiries/${id}`);
     init();
   };
 
-  /* EXPORT */
+  
   const exportCSV = () => {
     const rows = [
       ["Name", "Mobile", "Message", "PG", "Status", "Date"],
@@ -72,7 +71,7 @@ export default function ManageEnquiries() {
     a.click();
   };
 
-  /* FILTERED */
+  
   const filtered = useMemo(() => {
     return enquiries.filter(e => {
       if (filterPg && e.pgId !== filterPg) return false;
@@ -88,7 +87,7 @@ export default function ManageEnquiries() {
   return (
     <div className="enquiries">
 
-      {/* HEADER */}
+     
       <div className="enquiries-top">
         <div>
           <h2>Enquiries</h2>
@@ -101,7 +100,7 @@ export default function ManageEnquiries() {
         </button>
       </div>
 
-      {/* FILTER BAR */}
+     
       <div className="enquiries-filter">
         <select value={filterPg} onChange={e => setFilterPg(e.target.value)}>
           <option value="">All PGs</option>
@@ -123,7 +122,7 @@ export default function ManageEnquiries() {
         </select>
       </div>
 
-      {/* TABLE */}
+     
       <div className="enquiries-table-card">
         <table className="enquiries-table">
           <thead>

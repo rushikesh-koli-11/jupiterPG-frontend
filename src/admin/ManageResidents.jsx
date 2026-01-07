@@ -25,7 +25,6 @@ export default function ManageResidents() {
   const [editId, setEditId] = useState(null);
   const [showModal, setShowModal] = useState(false);
 
-  /* ================= FILTER STATE ================= */
 
   const [filters, setFilters] = useState({
     pgId: "",
@@ -38,7 +37,6 @@ export default function ManageResidents() {
   const [filterRooms, setFilterRooms] = useState([]);
   const [filterBeds, setFilterBeds] = useState([]);
 
-  /* ================= FORM ================= */
 
   const [form, setForm] = useState({
     pgId: "",
@@ -54,7 +52,6 @@ export default function ManageResidents() {
     expectedCheckOutDate: "",
   });
 
-  /* ================= INITIAL LOAD ================= */
 
   useEffect(() => {
     init();
@@ -105,7 +102,6 @@ export default function ManageResidents() {
     setBedMap(map);
   };
 
-  /* ================= FILTER DEPENDENCY ================= */
 
   useEffect(() => {
     if (!filters.pgId) {
@@ -136,7 +132,6 @@ export default function ManageResidents() {
     setFilterBeds(bedsForRoom);
   }, [filters.roomId, bedMap]);
 
-  /* ================= FORM DROPDOWNS ================= */
 
   const onBuildingChange = async (pgId) => {
     const res = await getRoomsByPg(pgId);
@@ -172,7 +167,6 @@ export default function ManageResidents() {
     }));
   };
 
-  /* ================= ADD / EDIT ================= */
 
   const submit = async (e) => {
     e.preventDefault();
@@ -207,7 +201,6 @@ export default function ManageResidents() {
     setShowModal(true);
   };
 
-  /* ========= EDIT ========= */
 
   const openEditModal = async (r) => {
     setEditId(r.id);
@@ -263,7 +256,6 @@ export default function ManageResidents() {
     setBeds([]);
   };
 
-  /* ================= CHECKOUT & DELETE ================= */
 
   const checkoutResident = async (id) => {
     if (window.confirm("Checkout resident?")) {
@@ -281,7 +273,6 @@ export default function ManageResidents() {
     }
   };
 
-  /* ================= FILTERED DATA ================= */
 
   const filteredResidents = useMemo(() => {
     return residents.filter(r => {
@@ -306,13 +297,11 @@ export default function ManageResidents() {
     });
   }, [residents, filters, roomMap, bedMap]);
 
-  /* ================= UI ================= */
 
   return (
     <div className="residents-page">
       <h2 className="residents-title">Manage Residents</h2>
 
-      {/* FILTER BAR */}
       <div className="filter-card">
         <select value={filters.pgId}
           onChange={e => setFilters(f => ({ ...f, pgId: e.target.value }))}>
@@ -357,7 +346,6 @@ export default function ManageResidents() {
         ➕ Add Resident
       </button>
 
-      {/* TABLE */}
       <table className="residents-table">
         <thead>
           <tr>
@@ -425,7 +413,6 @@ export default function ManageResidents() {
         </tbody>
       </table>
 
-      {/* MODAL */}
       {showModal && (
         <div className="modal-overlay">
           <div className="modal-card modal-scroll">
@@ -482,13 +469,11 @@ export default function ManageResidents() {
                 value={form.deposit}
                 onChange={e => setForm(p => ({ ...p, deposit: e.target.value }))} required />
 
-              {/* ✅ LABEL + INPUT */}
               <label className="form-label">Check-in Date</label>
               <input type="date"
                 value={form.checkInDate}
                 onChange={e => setForm(p => ({ ...p, checkInDate: e.target.value }))} required />
 
-              {/* ✅ LABEL + INPUT */}
               <label className="form-label">Expected Check-out Date</label>
               <input type="date"
                 value={form.expectedCheckOutDate}

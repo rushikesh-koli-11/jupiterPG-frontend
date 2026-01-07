@@ -41,7 +41,7 @@ export default function Reviews() {
   return (
     <section className="lux-reviews">
       <div className="container">
-        {/* HEADER */}
+        
         <div className="lux-header text-center">
           <h2 className="lux-title">Meet the happy faces</h2>
           <p className="lux-subtitle">
@@ -51,7 +51,7 @@ export default function Reviews() {
         </div>
 
         <div className="lux-reviews-grid">
-          {/* LEFT – IMAGES */}
+        
           <div className="lux-review-images">
             <img src={review1} alt="Happy residents" />
             <img src={review2} alt="Jupiter PG residents" />
@@ -59,7 +59,7 @@ export default function Reviews() {
             <img src={review4} alt="Resident events" />
           </div>
 
-          {/* RIGHT – REVIEW CARDS */}
+         
           <div className="lux-review-cards">
             {reviews.map((r, i) => (
               <div key={i} className="lux-review-card">

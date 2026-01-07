@@ -36,7 +36,7 @@ export default function Hero() {
             </button>
           </div>
 
-          {/* RIGHT CAROUSEL */}
+         
           <div className="col-lg-7 col-md-12">
             <div
               id="luxHeroCarousel"
@@ -72,7 +72,7 @@ export default function Hero() {
 
               </div>
 
-              {/* CONTROLS */}
+          
               <button
                 className="carousel-control-prev"
                 type="button"

@@ -1,11 +1,9 @@
-/* ===== HERO SECTION ===== */
 .lux-hero {
   padding: 120px 0 80px;
   background: #020617;
   color: #fff;
 }
 
-/* ===== CONTENT ===== */
 .lux-hero-content {
   padding-right: 20px;
 }
@@ -39,7 +37,6 @@
   max-width: 480px;
 }
 
-/* ===== BUTTON ===== */
 .lux-btn {
   margin-top: 28px;
   padding: 12px 30px;
@@ -57,7 +54,6 @@
   box-shadow: 0 10px 30px rgba(250, 204, 21, 0.35);
 }
 
-/* ===== CAROUSEL ===== */
 .lux-carousel {
   overflow: hidden;
 }
@@ -67,7 +63,6 @@
   object-fit: cover;
 }
 
-/* ===== MOBILE ===== */
 @media (max-width: 992px) {
   .lux-hero {
     padding-top: 100px;

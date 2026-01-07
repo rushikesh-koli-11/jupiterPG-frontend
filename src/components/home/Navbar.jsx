@@ -23,12 +23,10 @@ export default function Navbar() {
     message: "",
   });
 
-  /* ================= LOAD PGs ================= */
   useEffect(() => {
     getPgs().then((res) => setPgs(res.data || []));
   }, []);
 
-  /* ================= CLOSE MENU ================= */
   const closeMenu = () => {
     setMenuOpen(false);
     setShowMobileSearch(false);
@@ -48,7 +46,6 @@ export default function Navbar() {
     return () => document.removeEventListener("click", handleOutside);
   }, []);
 
-  /* ================= SEARCH ================= */
   const handleSearch = (e) => {
     e.preventDefault();
     if (!search.trim()) return;
@@ -57,7 +54,6 @@ export default function Navbar() {
     closeMenu();
   };
 
-  /* ================= ENQUIRY ================= */
   const submitEnquiry = async (e) => {
     e.preventDefault();
 
@@ -78,16 +74,13 @@ export default function Navbar() {
 
   return (
     <>
-      {/* ================= NAVBAR ================= */}
       <nav ref={navRef} className="lux-navbar">
         <div className="container nav-inner">
 
-          {/* LOGO */}
           <NavLink to="/" className="lux-logo" onClick={closeMenu}>
             <i className="bi bi-building"></i> Jupiter PG
           </NavLink>
 
-          {/* NAV MENU */}
           <div className={`nav-menu ${menuOpen ? "open" : ""}`}>
             <NavLink to="/apartments" onClick={closeMenu}>Apartments</NavLink>
             <NavLink to="/amenities" onClick={closeMenu}>Amenities</NavLink>
@@ -103,7 +96,6 @@ export default function Navbar() {
             </NavLink>
           </div>
 
-          {/* DESKTOP SEARCH (FULL WIDTH) */}
           <form className="lux-search desktop full-width" onSubmit={handleSearch}>
             <input
               type="text"
@@ -116,7 +108,6 @@ export default function Navbar() {
             </button>
           </form>
 
-          {/* MOBILE ICONS */}
           <div className="mobile-actions">
             <button className="icon-btn" onClick={() => setShowMobileSearch(true)}>
               <i className="bi bi-search"></i>
@@ -129,7 +120,6 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* ================= MOBILE SEARCH ================= */}
       {showMobileSearch && (
         <div className="mobile-search">
           <form onSubmit={handleSearch}>
@@ -146,7 +136,6 @@ export default function Navbar() {
         </div>
       )}
 
-      {/* ================= ENQUIRY MODAL ================= */}
       {showEnquiry && (
         <div className="modal-overlay">
           <div className="modal-card">

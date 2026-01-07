@@ -1,33 +1,30 @@
-/* =========================================================
-   LUXURY STATS – TIGHT, CLEAN, NO OVERFLOW
-   ========================================================= */
 
 .lux-stats {
-  padding: 60px 0 40px; /* reduced bottom gap */
+  padding: 60px 0 40px; 
   background: transparent;
 }
 
-/* column control */
+
 .lux-stat-col {
   padding: 0;
 }
 
-/* stat block */
+
 .lux-stat-card {
   padding: 20px 0;
 }
 
-/* fixed height prevents jump */
+
 .lux-stat-value {
   font-size: 3rem;
   font-weight: 700;
   color: #fde68a;
   margin: 0;
   line-height: 1;
-  min-height: 3.2rem; /* IMPORTANT: prevents layout shift */
+  min-height: 3.2rem; 
 }
 
-/* label */
+
 .lux-stat-label {
   margin-top: 6px;
   font-size: 0.85rem;
@@ -36,7 +33,6 @@
   color: #94a3b8;
 }
 
-/* vertical dividers (desktop only) */
 @media (min-width: 768px) {
   .lux-stat-card {
     position: relative;
@@ -58,7 +54,7 @@
   }
 }
 
-/* mobile spacing */
+
 @media (max-width: 768px) {
   .lux-stat-value {
     font-size: 2.4rem;
@@ -68,7 +64,6 @@
     margin-bottom: 24px;
   }
 }
-/* ===== STATS HEADER (MATCHES AMENITIES) ===== */
 .lux-stats-header {
   margin-bottom: 60px;
 }

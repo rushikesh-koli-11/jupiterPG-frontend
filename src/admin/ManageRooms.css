@@ -182,7 +182,6 @@
 .muted {
   color: #9ca3af;
 }
-/* ================= ACCORDION STRUCTURE ================= */
 
 .pg-accordion,
 .floor-accordion {
@@ -217,7 +216,6 @@
   display: none;
 }
 
-/* Chevron */
 .pg-summary::after,
 .floor-summary::after {
   content: "▾";
@@ -228,36 +226,32 @@ details[open] > summary::after {
   transform: rotate(180deg);
 }
 
-/* FLOOR CONTENT SPACING */
 .floor-accordion {
   margin: 12px;
   padding: 6px;
 }
 
-/* ROOM TABLE INSIDE ACCORDION */
 .floor-accordion .rooms-table {
   margin-top: 10px;
 }
-/* ================= UNIFIED BUTTON SIZE FIX ================= */
 
-/* Base button reset */
 .btn-primary,
 .btn-secondary {
-  height: 44px;               /* 🔑 FORCE SAME HEIGHT */
+  height: 44px;               
   min-height: 44px;
-  padding: 0 18px;            /* horizontal only */
-  display: inline-flex;       /* 🔑 align icon + text */
-  align-items: center;        /* vertical center */
+  padding: 0 18px;            
+  display: inline-flex;       
+  align-items: center;        
   justify-content: center;
-  gap: 8px;                   /* space between icon & text */
-  line-height: 1;             /* prevent text height mismatch */
+  gap: 8px;                   
+  line-height: 1;             
   font-size: 0.9rem;
   border-radius: 12px;
   cursor: pointer;
   white-space: nowrap;
 }
 
-/* PRIMARY */
+
 .btn-primary {
   background: linear-gradient(180deg, #facc15, #eab308);
   color: #1e293b;
@@ -265,20 +259,17 @@ details[open] > summary::after {
   font-weight: 600;
 }
 
-/* SECONDARY */
 .btn-secondary {
   background: rgba(255,255,255,0.08);
   border: 1px solid rgba(255,255,255,0.15);
   color: #e5e7eb;
 }
 
-/* Hover consistency */
 .btn-primary:hover,
 .btn-secondary:hover {
   opacity: 0.95;
 }
 
-/* Icon vertical alignment fix */
 .btn-primary svg,
 .btn-secondary svg,
 .btn-primary span,

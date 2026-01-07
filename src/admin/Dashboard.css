@@ -1,13 +1,9 @@
-/* =========================
-   DASHBOARD BASE
-========================= */
+
 .dashboard {
   color: #e5e7eb;
 }
 
-/* =========================
-   HEADER
-========================= */
+
 .dashboard-header {
   margin-bottom: 28px;
 }
@@ -23,9 +19,7 @@
   font-size: 0.95rem;
 }
 
-/* =========================
-   GRID
-========================= */
+
 .dashboard-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -33,9 +27,6 @@
   margin-bottom: 32px;
 }
 
-/* =========================
-   CARD
-========================= */
 .dashboard-card {
   background: #020617;
   border: 1px solid rgba(255,255,255,0.08);
@@ -52,7 +43,7 @@
   box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
 
-/* Icon */
+
 .dashboard-card-icon {
   width: 46px;
   height: 46px;
@@ -69,7 +60,7 @@
   font-size: 1.4rem;
 }
 
-/* Info */
+
 .dashboard-card-info {
   display: flex;
   flex-direction: column;
@@ -86,18 +77,14 @@
   color: #e5e7eb;
 }
 
-/* =========================
-   SECTION
-========================= */
+
 .dashboard-section h3 {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 16px;
 }
 
-/* =========================
-   LOADING
-========================= */
+
 .dashboard-loading {
   color: #9ca3af;
   font-size: 1rem;

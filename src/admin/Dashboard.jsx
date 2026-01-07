@@ -20,13 +20,13 @@ export default function Dashboard() {
 
   return (
     <div className="dashboard">
-      {/* HEADER */}
+    
       <div className="dashboard-header">
         <h2>Dashboard Overview</h2>
         <p>Quick snapshot of your PG operations</p>
       </div>
 
-      {/* COUNTS */}
+     
       <div className="dashboard-grid">
         <DashboardCard
           icon="bi-buildings"
@@ -60,7 +60,7 @@ export default function Dashboard() {
         />
       </div>
 
-      {/* REVENUE */}
+      
       <div className="dashboard-section">
         <h3>Revenue Summary</h3>
 
@@ -86,9 +86,6 @@ export default function Dashboard() {
   );
 }
 
-/* =========================
-   CARD COMPONENT
-========================= */
 function DashboardCard({ icon, title, value }) {
   return (
     <div className="dashboard-card">

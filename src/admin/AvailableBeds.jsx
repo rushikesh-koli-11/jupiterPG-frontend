@@ -10,7 +10,7 @@ export default function AvailableBeds() {
   const [pgMap, setPgMap] = useState({});
   const [roomMap, setRoomMap] = useState({});
 
-  /* FILTER STATE */
+  
   const [filters, setFilters] = useState({
     pgId: "",
     floor: "",
@@ -21,7 +21,7 @@ export default function AvailableBeds() {
 
   const [filterRooms, setFilterRooms] = useState([]);
 
-  /* MODAL STATE */
+
   const [showModal, setShowModal] = useState(false);
   const [selectedBed, setSelectedBed] = useState(null);
 
@@ -38,7 +38,7 @@ export default function AvailableBeds() {
     expectedCheckOutDate: "",
   });
 
-  /* INITIAL LOAD */
+ 
   useEffect(() => {
     init();
   }, []);
@@ -76,7 +76,7 @@ export default function AvailableBeds() {
     setRoomMap(roomInfoMap);
   };
 
-  /* FILTER ROOMS */
+ 
   useEffect(() => {
     if (!filters.pgId) {
       setFilterRooms([]);
@@ -97,7 +97,7 @@ export default function AvailableBeds() {
     setFilterRooms(roomsForPg);
   }, [filters.pgId, filters.floor, roomMap]);
 
-  /* FILTERED BEDS */
+ 
   const filteredBeds = useMemo(() => {
     return beds.filter(b => {
       const room = roomMap[b.roomId];
@@ -113,7 +113,7 @@ export default function AvailableBeds() {
     });
   }, [beds, filters, roomMap]);
 
-  /* MODAL */
+
   const openAddResidentModal = (bed) => {
     const room = roomMap[bed.roomId];
     if (!room) return;
@@ -160,13 +160,13 @@ export default function AvailableBeds() {
   return (
     <div className="beds">
 
-      {/* HEADER */}
+     
       <div className="beds-top">
         <h2>Available Beds</h2>
         <p className="subtitle">Assign residents to vacant beds</p>
       </div>
 
-      {/* FILTER BAR (ONE LINE) */}
+   
       <div className="beds-filter">
         <select
           value={filters.pgId}
@@ -232,7 +232,7 @@ export default function AvailableBeds() {
         </select>
       </div>
 
-      {/* TABLE */}
+   
       <div className="beds-table-card">
         <table className="beds-table">
           <thead>
@@ -267,7 +267,7 @@ export default function AvailableBeds() {
         </table>
       </div>
 
-      {/* MODAL */}
+     
       {showModal && selectedBed && (
         <div className="modal-overlay">
           <div className="modal-card">

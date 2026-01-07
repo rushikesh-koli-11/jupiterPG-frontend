@@ -34,7 +34,7 @@ export default function Search() {
     <section className="lux-search-page">
       <div className="container">
 
-        {/* HEADER */}
+     
         <div className="lux-header text-center">
           <h2 className="lux-title">Search Results</h2>
           <p className="lux-subtitle">
@@ -51,7 +51,7 @@ export default function Search() {
             {pgs.map((pg) => (
               <div key={pg.id} className="lux-apartment-card">
 
-                {/* IMAGE */}
+              
                 <div className="lux-apartment-image">
                   <img
                     src={pg.imageUrl || "/room.jpg"}
@@ -62,7 +62,7 @@ export default function Search() {
                   </span>
                 </div>
 
-                {/* CONTENT */}
+             
                 <div className="lux-apartment-content">
                   <div className="lux-apartment-header">
                     <h5>{pg.name}</h5>

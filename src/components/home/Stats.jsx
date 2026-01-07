@@ -38,7 +38,7 @@ export default function Stats() {
     <section className="lux-stats">
       <div className="container">
 
-        {/* HEADING */}
+        
         <div className="lux-stats-header text-center">
           <h3 className="lux-stats-title">Trusted by Thousands</h3>
           <p className="lux-stats-subtitle">
@@ -46,7 +46,7 @@ export default function Stats() {
           </p>
         </div>
 
-        {/* STATS */}
+        
         <div className="row text-center align-items-center g-0">
           {stats.map((s, i) => (
             <div key={i} className="col-md-4 lux-stat-col">

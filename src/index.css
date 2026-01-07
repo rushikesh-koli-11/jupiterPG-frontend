@@ -11,7 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* ===== GLOBAL BACKGROUND ===== */
+
+html,
 html,
 body {
   background-color: #020617;

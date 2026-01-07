@@ -15,7 +15,6 @@ import { CSS } from "@dnd-kit/utilities";
 import { getPgs, addPg, updatePg, deletePg } from "../api/pgService";
 import "./ManageBuildings.css";
 
-/* ================= SORTABLE ITEM ================= */
 
 function SortableImage({ image, onRemove }) {
   const { attributes, listeners, setNodeRef, transform, transition } =
@@ -35,7 +34,6 @@ function SortableImage({ image, onRemove }) {
   );
 }
 
-/* ================= PAGE ================= */
 
 export default function ManageBuildings() {
   const [pgs, setPgs] = useState([]);
@@ -50,7 +48,6 @@ export default function ManageBuildings() {
     totalFloors: "",
   });
 
-  // 🔥 SINGLE SOURCE OF TRUTH
   const [images, setImages] = useState([]);
 
   const load = async () => {
@@ -98,7 +95,6 @@ export default function ManageBuildings() {
     setShowModal(false);
   };
 
-  /* ================= IMAGES ================= */
 
   const onFileChange = (e) => {
     const files = Array.from(e.target.files);
@@ -128,7 +124,6 @@ export default function ManageBuildings() {
     });
   };
 
-  /* ================= SUBMIT ================= */
 
   const submit = async (e) => {
     e.preventDefault();
@@ -228,7 +223,6 @@ export default function ManageBuildings() {
   );
 }
 
-/* ================= MODAL ================= */
 
 function BuildingModal({
   editPg,

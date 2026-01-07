@@ -1,17 +1,12 @@
-/* =========================================================
-   SEARCH PAGE – LUXURY STYLE
-   ========================================================= */
 
 .lux-search-page {
   padding: 90px 0;
 }
 
-/* reuse existing typography */
 .lux-search-page strong {
   color: #fde68a;
 }
 
-/* optional spacing tweak */
 .lux-search-page .lux-apartment-list {
   margin-top: 40px;
 }

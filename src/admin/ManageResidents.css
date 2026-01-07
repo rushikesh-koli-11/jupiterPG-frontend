@@ -7,7 +7,6 @@
   margin-bottom: 20px;
 }
 
-/* FILTER BAR */
 .filter-card {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -28,7 +27,6 @@
   color: #e5e7eb;
 }
 
-/* BUTTONS */
 .btn-primary {
   background: linear-gradient(180deg, #facc15, #eab308);
   color: #1e293b;
@@ -43,7 +41,6 @@
   color: #ef4444;
 }
 
-/* TABLE */
 .residents-table {
   width: 100%;
   border-collapse: collapse;
@@ -86,7 +83,6 @@
 .table-actions button:hover {
   background: rgba(255,255,255,0.12);
 }
-/* ================= MODAL FIX ================= */
 
 .modal-overlay {
   position: fixed;
@@ -107,13 +103,11 @@
   box-shadow: 0 30px 90px rgba(0,0,0,0.8);
 }
 
-/* ✅ KEY FIX */
 .modal-scroll {
   max-height: 90vh;
   overflow-y: auto;
 }
 
-/* FORM */
 .modal-form {
   display: grid;
   gap: 12px;
@@ -128,20 +122,18 @@
   color: #e5e7eb;
 }
 
-/* LABELS */
 .form-label {
   font-size: 0.8rem;
   color: #9ca3af;
   margin-top: 4px;
 }
 
-/* FOOTER */
+
 .modal-footer {
   display: flex;
   gap: 12px;
   margin-top: 12px;
 }
-/* ================= DISABLED BUTTON VISIBILITY ================= */
 
 .table-actions button:disabled {
   opacity: 0.4;
@@ -150,12 +142,10 @@
   border-color: rgba(255,255,255,0.08);
 }
 
-/* Prevent hover effect on disabled */
 .table-actions button:disabled:hover {
   background: rgba(255,255,255,0.03);
 }
 
-/* Optional: subtle strike-through feel */
 .table-actions button:disabled {
   filter: grayscale(100%);
 }
@@ -166,7 +156,6 @@
   font-weight: 500;
 }
 
-/* ================= ID PROOF PREVIEW ================= */
 
 .id-proof-preview {
   width: 100%;
@@ -185,7 +174,7 @@
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* Hover polish */
+
 .id-proof-preview:hover {
   transform: scale(1.015);
   box-shadow:
@@ -193,7 +182,7 @@
     0 18px 45px rgba(0,0,0,0.8);
 }
 
-/* Container spacing */
+
 .id-proof-wrapper {
   margin-top: 6px;
 }

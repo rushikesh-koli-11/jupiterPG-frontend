@@ -1,4 +1,3 @@
-/* ===== LUXURY HERO → AMENITIES DIVIDER ===== */
 .lux-section-divider {
   height: 120px;
   margin-top: -60px;
@@ -11,7 +10,6 @@
   pointer-events: none;
 }
 
-/* Optional premium glow */
 .lux-section-divider::after {
   content: "";
   display: block;
@@ -26,7 +24,6 @@
   );
 }
 
-/* ===== MOBILE OPTIMIZATION ===== */
 @media (max-width: 768px) {
   .lux-section-divider {
     height: 80px;

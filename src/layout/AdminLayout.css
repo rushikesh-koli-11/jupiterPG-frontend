@@ -4,19 +4,25 @@
   background: #020617;
 }
 
-/* Main wrapper (excluding sidebar) */
 .admin-main {
-  margin-left: 240px;        /* 🔒 SAME AS SIDEBAR WIDTH */
   flex: 1;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  transition: margin-left 0.3s ease;
 }
 
-/* Page content */
+.sidebar-open .admin-main {
+  margin-left: 240px;
+}
+
+.sidebar-closed .admin-main {
+  margin-left: 72px;
+}
+
 .admin-content {
   padding: 24px;
   background: #020617;
-  flex: 1;                   /* allow scrolling */
-  overflow-y: auto;          /* 🔒 only content scrolls */
+  flex: 1;
+  overflow-y: auto;
 }

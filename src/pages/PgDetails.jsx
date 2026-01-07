@@ -180,7 +180,7 @@ export default function PgDetails() {
 
       </div>
 
-      {/* ENQUIRY MODAL */}
+     
       {showEnquiry && (
         <div className="modal-overlay">
           <div className="modal-card">

@@ -242,7 +242,7 @@ function ImageSlider({ images = [] }) {
 
     const timer = setInterval(() => {
       setIndex(prev => (prev + 1) % images.length);
-    }, 3000); // ⏱️ slide every 3 seconds
+    }, 3000); 
 
     return () => clearInterval(timer);
   }, [images]);

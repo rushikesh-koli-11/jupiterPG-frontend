@@ -9,7 +9,7 @@ import Reviews from "../components/home/Reviews";
 export default function Home() {
   return (
     <>
-      {/* <Navbar /> */}
+     
 
       <Hero />
 
@@ -21,7 +21,7 @@ export default function Home() {
       <Reviews /> 
       <FAQ />
 
-      {/* <Footer /> */}
+     
     </>
   );
 }

@@ -37,7 +37,6 @@ tbody tr {
   color: #9ca3af;
 }
 
-/* BUTTONS */
 
 .btn-primary {
   background: linear-gradient(180deg, #facc15, #eab308);
@@ -56,7 +55,6 @@ tbody tr {
   cursor: pointer;
 }
 
-/* ACTIONS */
 
 .actions {
   display: flex;
@@ -83,7 +81,6 @@ tbody tr {
   color: #ef4444;
 }
 
-/* MODAL */
 
 .pg-modal-overlay {
   position: fixed;
@@ -129,7 +126,6 @@ tbody tr {
   margin-top: 10px;
 }
 
-/* IMAGE PREVIEW */
 
 .image-preview-grid {
   display: grid;

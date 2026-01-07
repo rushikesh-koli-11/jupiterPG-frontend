@@ -2,10 +2,9 @@ import axios from "axios";
 
 const api = axios.create({
   baseURL: "http://13.60.229.108:8080/" || "http://localhost:8080/",
-  withCredentials: true, // safe even if not used
+  withCredentials: true, 
 });
 
-// Attach JWT automatically
 api.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem("token");
@@ -14,18 +13,12 @@ api.interceptors.request.use(
       config.headers.Authorization = `Bearer ${token}`;
     }
 
-    // ❗ IMPORTANT:
-    // DO NOT set Content-Type here.
-    // Axios will automatically set:
-    // - application/json for normal requests
-    // - multipart/form-data with boundary for FormData
-
+  
     return config;
   },
   (error) => Promise.reject(error)
 );
 
-// Handle auth errors
 api.interceptors.response.use(
   (response) => response,
   (error) => {

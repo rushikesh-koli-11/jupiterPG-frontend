@@ -205,7 +205,7 @@ export default function ManageRooms() {
       {pgs.map(pg => {
         const rooms = roomsByPg[pg.id] || [];
 
-        // Group rooms by floor
+      
         const floors = rooms.reduce((acc, r) => {
           acc[r.floorNumber] = acc[r.floorNumber] || [];
           acc[r.floorNumber].push(r);
@@ -215,7 +215,7 @@ export default function ManageRooms() {
         return (
           <div key={pg.id} className="room-card">
 
-            {/* PG HEADER */}
+          
             <details className="pg-accordion">
               <summary className="pg-summary">
                 <span>{pg.name}</span>
@@ -243,7 +243,7 @@ export default function ManageRooms() {
                 </div>
               </summary>
 
-              {/* FLOORS */}
+            
               {Object.keys(floors).length === 0 ? (
                 <p className="muted">No rooms added</p>
               ) : (
@@ -253,7 +253,7 @@ export default function ManageRooms() {
                       Floor {floor}
                     </summary>
 
-                    {/* ROOMS TABLE */}
+                   
                     <table className="rooms-table">
                       <thead>
                         <tr>

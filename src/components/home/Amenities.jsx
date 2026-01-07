@@ -44,7 +44,6 @@ export default function Amenities() {
     <section id="amenities" className="lux-section">
       <div className="container">
 
-        {/* HEADER */}
         <div className="text-center lux-header">
           <h2 className="lux-title">Luxury Amenities</h2>
           <p className="lux-subtitle">
@@ -52,18 +51,15 @@ export default function Amenities() {
           </p>
         </div>
 
-        {/* GRID */}
         <div className="row g-4">
           {amenities.map((a, i) => (
             <div key={i} className="col-sm-6 col-md-4 col-lg-3">
               <div className={`lux-card ${a.gradient}`}>
 
-                {/* ICON */}
                 <div className="lux-icon">
                   <i className={`bi ${a.icon}`} />
                 </div>
 
-                {/* CONTENT */}
                 <h5 className="lux-card-title">{a.title}</h5>
 
                 <ul className="lux-list">
